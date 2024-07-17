@@ -1,5 +1,5 @@
 //connect to the socket server!
-const socket = io.connect("https://agario-clone-xv54.onrender.com:10000");
+const socket = io.connect("https://agario-clone-xv54.onrender.com");
 
 const init = async () => {
   const initData = await socket.emitWithAck("init", {

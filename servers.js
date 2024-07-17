@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 app.use(express.static(__dirname + "/public"));
-const expressServer = app.listen(10000);
+const expressServer = app.listen(process.env.PORT);
 const socketio = require("socket.io");
 const io = socketio(expressServer, {
   cors: {
