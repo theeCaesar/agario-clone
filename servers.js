@@ -5,8 +5,7 @@ const expressServer = app.listen(process.env.PORT);
 const socketio = require("socket.io");
 const io = socketio(expressServer, {
   cors: {
-    origin: ["https://agario-clone-xv54.onrender.com"],
-    credentials: true,
+    origin: ["*"],
   },
 });
 const { instrument } = require("@socket.io/admin-ui");
