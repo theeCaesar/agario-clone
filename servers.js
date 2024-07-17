@@ -5,7 +5,7 @@ const expressServer = app.listen(9000);
 const socketio = require("socket.io");
 const io = socketio(expressServer, {
   cors: {
-    origin: ["*"],
+    origin: ["https://agario-clone-xv54.onrender.com"],
     credentials: true,
   },
 });
