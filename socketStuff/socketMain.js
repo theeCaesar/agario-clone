@@ -30,6 +30,7 @@ let tickTockInterval;
 initGame();
 
 io.on("connect", (socket) => {
+  console.log(socket);
   let player = {};
   socket.on("init", (playerObj, ackCallback) => {
     if (players.length === 0) {
